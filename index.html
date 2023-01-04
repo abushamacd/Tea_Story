@@ -13,13 +13,14 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8cffe8c664.js" crossorigin="anonymous"></script>
     <!-- Tailwind -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        primary: '#631E12',
                     }
                 }
             }
@@ -34,10 +35,163 @@
 </head>
 
 <body>
-    <h2 class="text-5xl font-semibold text-center" style="font-family: Muara;">Tea</h2>
-    <h2 class="text-5xl font-normal text-center" style="font-family: Ebrima;">Tea</h2>
+
+    <div class="mx-auto">
+        <div class="flex relative">
+            <main class="h-[4000px] w-full bg-blue-200 ">
+                // Content
+            </main>
+
+            <aside class="h-screen fixed top-0 right-0 w-[298px] sidebar_bg">
+                <div class="w-full pl-[52px] ">
+                    <div class="h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto">
+                        <div class="">
+                            <!-- Logo -->
+                            <div class="logo my-[40px] ">
+                                <a href="#">
+                                    <img src="./assets/images/logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- Account  -->
+                            <div class="user flex w-[104px] justify-between ">
+                                <div class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center">
+                                    <i class="fa-regular fa-circle-user text-[24px] "></i>
+                                </div>
+                                <div
+                                    class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center relative">
+                                    <span
+                                        class="absolute bg-[#00D746] rounded-full w-[20px] h-[20px] text-center text-white leading-tight top-[-7px] right-[-5px] ">0</span>
+                                    <i class="fa-solid fa-cart-shopping">
+                                    </i>
+                                </div>
+                            </div>
+                            <!-- Sidebar -->
+                            <div class="manu my-[34px]" id="sidenavSecExample">
+                                <ul class="relative pr-2">
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>Story</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>Teas</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative" id="sidenavSecEx2">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out cursor-pointer"
+                                            data-mdb-ripple="true" data-mdb-ripple-color="primary"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx2"
+                                            aria-expanded="false" aria-controls="collapseSidenavSecEx2">
+
+                                            <span>Superfoods</span>
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx2"
+                                            aria-labelledby="sidenavSecEx2" data-bs-parent="#sidenavSecExample">
+                                            <li class="relative">
+                                                <a href="#!"
+                                                    class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                    data-mdb-ripple="true" data-mdb-ripple-color="primary">Superfoods
+                                                    1</a>
+                                            </li>
+                                            <li class="relative">
+                                                <a href="#!"
+                                                    class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                    data-mdb-ripple="true" data-mdb-ripple-color="primary">Superfoods
+                                                    2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="relative" id="sidenavSecEx3">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out cursor-pointer"
+                                            data-mdb-ripple="true" data-mdb-ripple-color="primary"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx3"
+                                            aria-expanded="false" aria-controls="collapseSidenavSecEx3">
+
+                                            <span>Shop</span>
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3"
+                                            aria-labelledby="sidenavSecEx3" data-bs-parent="#sidenavSecExample">
+                                            <li class="relative">
+                                                <a href="#!"
+                                                    class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                    data-mdb-ripple="true" data-mdb-ripple-color="primary">Shop 1</a>
+                                            </li>
+                                            <li class="relative">
+                                                <a href="#!"
+                                                    class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                    data-mdb-ripple="true" data-mdb-ripple-color="primary">Shop 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>promotions</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>Bes-tea program</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>Blog</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>wholesale</span>
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                            href="#">
+                                            <span>contact us</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
 
 
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <!-- Flowbite -->
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
 </body>

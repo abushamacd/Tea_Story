@@ -2,7 +2,7 @@
   width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(238, 186, 16);
+  background-color: #fcd244;
   border-radius: 40px;
 }
 ::-webkit-scrollbar-track {
@@ -13,7 +13,47 @@
   background-image: url("./../images/sidebar/sidebar_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
 }
 .font_muara {
   font-family: Muara;
+}
+
+/* Homepage */
+/* Banner */
+
+.banner_img_1 {
+  background-image: url("./../images/banner/banner_bg_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_img_2 {
+  background-image: url("./../images/banner/banner_bg_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_img_3 {
+  background-image: url("./../images/banner/banner_bg_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_solid_1 {
+  background-image: url("./../images/banner/banner_solid_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_solid_2 {
+  background-image: url("./../images/banner/banner_solid_2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_solid_3 {
+  background-image: url("./../images/banner/banner_solid_3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

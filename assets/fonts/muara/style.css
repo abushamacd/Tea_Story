@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Muara";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muara"), url("Muara.woff") format("woff");
+}

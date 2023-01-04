@@ -63,3 +63,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Product Gallary */
+.product_gallary_bg {
+  background-image: url("./../images/product_gallary/product_gallary_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -70,3 +70,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* .custom_img_frame {
+  border-top-left-radius: 100px 80px;
+  border-top-right-radius: 460px 175px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 120px;
+} */
+
+.custom_img_frame {
+  position: relative;
+  transform-origin: bottom left;
+  transform: skewY(7deg);
+  background: #000;
+  border-radius: 85px;
+  border-bottom-left-radius: 95px 110px;
+  border-bottom-right-radius: 360px 150px;
+}

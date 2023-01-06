@@ -18,6 +18,9 @@
 .font_muara {
   font-family: Muara;
 }
+.font_ebrima {
+  font-family: Ebrima;
+}
 
 /* Homepage */
 /* Banner */
@@ -77,6 +80,14 @@
   border-bottom-left-radius: 110px;
   border-bottom-right-radius: 120px;
 } */
+
+.client_brand_bg {
+  background-color: #fff;
+  border-top-left-radius: 65px 72px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 65px 72px;
+}
 
 .custom_img_frame {
   position: relative;

@@ -22,6 +22,11 @@
   font-family: Ebrima;
 }
 
+.body {
+  max-width: 1365px;
+  margin: auto;
+}
+
 /* Homepage */
 /* Banner */
 

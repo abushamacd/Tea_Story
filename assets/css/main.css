@@ -11,9 +11,6 @@
 
 .sidebar_bg {
   background-image: url("./../images/sidebar/sidebar_bg.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
 }
 .font_muara {
   font-family: Muara;

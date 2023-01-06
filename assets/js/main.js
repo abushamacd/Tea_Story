@@ -23,3 +23,11 @@ $(document).ready(function () {
     ],
   });
 });
+
+const screen = async () => {
+  let width = window.innerWidth;
+  let result = width / 2;
+  let left_screen = (document.getElementById("left_screen").style.marginLeft =
+    "1078px");
+  console.log(result);
+};

@@ -22,7 +22,7 @@
 }
 
 .body {
-  max-width: 1365px;
+  max-width: 1600px;
   margin: auto;
 }
 
@@ -56,6 +56,22 @@
   height: 100%;
 }
 
+.banner_solid_mobile_1 {
+  background-image: url("./../images/banner/banner_solid_mobile_1.svg");
+
+  position: relative;
+  width: 100%;
+  height: 430px;
+}
+
+.banner_solid_mobile_1::after {
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  content: "";
+  background: inherit;
+}
+
 .banner_solid_1::after,
 .banner_solid_3::after {
   position: absolute;
@@ -64,7 +80,6 @@
   content: "";
   background: inherit;
   top: 0;
-  left: 30px;
 }
 
 .banner_solid_2::after {
@@ -97,8 +112,8 @@
 
 .marquee_bg {
   background-image: url("./../images/zigzag.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
 }
 
 /* Product Gallary */
@@ -125,7 +140,14 @@
 
 .custom_img_frame {
   position: relative;
-  transform: translateX(0em) perspective(600px) rotateY(7deg) skewY(4deg);
+  transform: translateX(0em) perspective(600px) rotateY(9deg) skewY(2deg);
+  background: #000;
+  border-radius: 85px;
+}
+
+.custom_img_frame_3 {
+  position: relative;
+  transform: translateX(0em) perspective(600px) rotateY(4deg) skewY(2deg);
   background: #000;
   border-radius: 85px;
 }
@@ -243,4 +265,25 @@
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+/* Mobile Menu */
+
+.mobile_menu_bg {
+  background-image: url("./../images/mobile_menu_bg.svg");
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile_menu_bg::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  top: 20px;
+  background-position: bottom;
 }

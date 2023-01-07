@@ -125,19 +125,22 @@
 
 .custom_img_frame {
   position: relative;
-  transform-origin: bottom left;
-  transform: skewY(7deg);
+  transform: translateX(0em) perspective(600px) rotateY(7deg) skewY(4deg);
   background: #000;
   border-radius: 85px;
-  border-bottom-left-radius: 95px 110px;
-  border-bottom-right-radius: 360px 150px;
+}
+
+.custom_input_frame {
+  position: relative;
+  transform: translateX(1em) perspective(200px) rotateY(11deg) skewY(0deg);
+  background: #000;
+  border-radius: 85px;
 }
 
 .custom_img_frame_2 {
   position: relative;
   transform-origin: bottom left;
   transform: skewY(2deg);
-  background: #000;
   border-radius: 30px;
   border-bottom-right-radius: 50px 35px;
 }

@@ -74,25 +74,77 @@
         <div class="">
             <div>
                 <!-- Banner -->
-                <div class="bg-[#F37137]">
-                    <div
-                        class="content relative md:top-0 top-[80px] w-full md:flex h[860px] lg:h-screen md:h-[640px] body ">
-                        <div class="md:w-7/12 text-9xl order-2 ">
-                            <img class="w-full lg:h-screen md:h-[640px] h-[430px] md:ml-[-100px] object-cover"
-                                src="./assets/images/banner/banner_bg_1.png" alt="">
-                        </div>
-                        <div
-                            class="md:w-5/12 order-1 banner_solid_1 md:after:left-[2%] object-cover relative z-20 flex justify-center items-center lg:h-screen md:h-[640px] h-[510px] md:bg-transparent ">
-                            <div class="relative z-40 text-white text-center">
-                                <h2 class="uppercase font_muara text-[36px] md:text-[72px] leading-none">Hello <br>
-                                    Brew-TEA-ful!
-                                </h2>
-                                <p class="text-[24px] text-white font_muara ">Is it me you’re looking for?</p>
-                                <button
-                                    class="uppercase bg-[#fcd244] py-[16px] px-[24px] rounded-[35px] text-primary font-bold mt-[33px]">shop
-                                    now</button>
+                <div interval="100" id="default-carousel" class="relative md:top-0 top-[80px]" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative lg:h-screen h-[930px] overflow-hidden ">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out md:flex justify-between" data-carousel-item>
+                            <div class="md:w-7/12 text-9xl order-2 ">
+                                <img class="w-full lg:h-screen md:h-[640px] h-[430px] md:ml-[-100px] object-cover"
+                                    src="./assets/images/banner/banner_bg_1.png" alt="">
+                            </div>
+                            <div
+                                class="md:w-5/12 order-1 banner_solid_1 md:after:left-[2%] object-cover relative z-20 flex justify-center items-center lg:h-screen md:h-[640px] h-[430px] md:bg-transparent ">
+                                <div class="relative z-40 text-white text-center md:w-3/4 ">
+                                    <h2 class="uppercase font_muara text-[36px] md:text-[72px] leading-none">Hello <br>
+                                        Brew-TEA-ful!
+                                    </h2>
+                                    <p class="text-[24px] text-white font_muara ">Is it me you’re looking for?</p>
+                                    <button
+                                        class="uppercase bg-[#fcd244] py-[16px] px-[24px] rounded-[35px] text-primary font-bold mt-[33px]">shop
+                                        now</button>
+                                </div>
                             </div>
                         </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out md:flex justify-between" data-carousel-item>
+                            <div class="md:w-5/12 text-9xl">
+                                <img class="w-full lg:h-screen md:h-[640px] h-[430px] object-cover"
+                                    src="./assets/images/banner/banner_bg_2.png" alt="">
+                            </div>
+                            <div
+                                class="md:w-7/12 banner_solid_2 md:after:left-[-5%] after:left-0 object-cover relative z-20 flex justify-center items-center lg:h-screen md:h-[640px] h-[430px] md:bg-transparent ">
+                                <div class="relative z-40 text-white text-center md:ml-[-200px] md:w-3/4 md:pr-[50px] ">
+                                    <h2 class="uppercase font_muara text-[36px] md:text-[72px] leading-none">Its not a
+                                        Par-TEA unless
+                                        someone spills the tea!
+                                    </h2>
+                                    <p class="text-[24px] text-white font_muara ">Is it me you’re looking for?</p>
+                                    <button
+                                        class="uppercase bg-[#E80092] py-[16px] px-[24px] rounded-[35px] text-white font-bold mt-[33px]">shop
+                                        gifts</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out md:flex justify-between" data-carousel-item>
+                            <div class="md:w-7/12 text-9xl order-2 ">
+                                <img class="w-full lg:h-screen md:h-[640px] h-[430px] md:ml-[-100px] object-cover"
+                                    src="./assets/images/banner/banner_bg_3.png" alt="">
+                            </div>
+                            <div
+                                class="md:w-5/12 order-1 banner_solid_3 md:after:left-[2%] object-cover relative z-20 flex justify-center items-center lg:h-screen md:h-[640px] h-[430px] md:bg-transparent ">
+                                <div class="relative z-40 text-white text-center  md:w-3/4 ">
+                                    <h2 class="uppercase font_muara text-[36px] md:text-[72px] leading-none">Superfoods,
+                                        that loves you back!
+                                    </h2>
+                                    <p class="text-[24px] text-white font_muara ">Is it me you’re looking for?</p>
+                                    <button
+                                        class="uppercase bg-[#EB0045] py-[16px] px-[24px] rounded-[35px] text-white font-bold mt-[33px]">
+                                        Shop Superfoods</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="indicator absolute z-50  flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
                     </div>
                 </div>
 

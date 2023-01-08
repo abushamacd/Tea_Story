@@ -58,18 +58,40 @@
 
 .banner_solid_mobile_1 {
   background-image: url("./../images/banner/banner_solid_mobile_1.svg");
-
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 430px;
 }
 
+@media screen and (max-width: 480px) {
+  .banner_solid_1 {
+    background-image: url("./../images/banner/banner_solid_mobile_1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 430px;
+  }
+
+  .banner_solid_1::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: inherit;
+    top: -20px !important;
+  }
+}
+
 .banner_solid_mobile_1::after {
   position: absolute;
   width: 100%;
-  height: 430px;
+  height: 100%;
   content: "";
   background: inherit;
+  top: -20px;
 }
 
 .banner_solid_1::after,

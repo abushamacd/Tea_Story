@@ -49,7 +49,7 @@
 <body>
 
     <!-- Mobile Menu -->
-    <div class="mobile_menu_bg flex justify-between items-center z-40 block md:hidden">
+    <div class="mobile_menu_bg fixed h-[80px]  flex justify-between items-center z-50 block md:hidden">
         <div class="logo z-40 m-[22px]">
             <img src="./assets//images/logo.png" alt="">
         </div>
@@ -74,13 +74,13 @@
         <div class="">
             <div>
                 <!-- Banner -->
-                <div class="content bg-red-100 w-full md:flex h[860px] md:h-[640px] ">
+                <div class="content relative md:top-0 top-[80px] w-full md:flex h[860px] md:h-[640px] ">
                     <div class="md:w-7/12 text-9xl order-2 ">
                         <img class="w-full md:h-[640px] h-[430px] md:ml-[-100px] object-cover"
                             src="./assets/images/banner/banner_bg_1.png" alt="">
                     </div>
                     <div
-                        class="md:w-5/12 order-1 banner_solid_1 md:after:left-[2%] object-cover relative z-20 flex justify-center items-center md:h-[640px] h-[430px] md:bg-transparent ">
+                        class="md:w-5/12 order-1 banner_solid_1 md:after:left-[2%] object-cover relative z-20 flex justify-center items-center md:h-[640px] h-[510px] md:bg-transparent ">
                         <div class="relative z-40 text-white text-center">
                             <h2 class="uppercase font_muara text-[36px] md:text-[72px] leading-none">Hello <br>
                                 Brew-TEA-ful!
@@ -96,8 +96,8 @@
                 <!-- Text marquee -->
                 <div class="relative">
                     <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
-                        <marquee class="body md:pr-[250px] md:pl-[40px] " behavior="" direction=""
-                            onmouseover="this.stop();" onmouseout="this.start();">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
                             <div class="text-[32px] font_muara flex">
                                 <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
                                         class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
@@ -203,8 +203,8 @@
                 <!-- Text marquee -->
                 <div class="relative">
                     <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
-                        <marquee class="body md:pr-[250px] md:pl-[40px] " behavior="" direction=""
-                            onmouseover="this.stop();" onmouseout="this.start();">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
                             <div class="text-[32px] font_muara flex">
                                 <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
                                         class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
@@ -288,8 +288,8 @@
                 <!-- Text marquee -->
                 <div class="relative">
                     <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
-                        <marquee class="body md:pr-[250px] md:pl-[40px] " behavior="" direction=""
-                            onmouseover="this.stop();" onmouseout="this.start();">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
                             <div class="text-[32px] font_muara flex">
                                 <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
                                         class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
@@ -338,8 +338,8 @@
                 <!-- Text marquee -->
                 <div class="relative">
                     <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
-                        <marquee class="body md:pr-[250px] md:pl-[40px] " behavior="" direction=""
-                            onmouseover="this.stop();" onmouseout="this.start();">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
                             <div class="text-[32px] font_muara flex">
                                 <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
                                         class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
@@ -406,8 +406,8 @@
                 <!-- Text marquee -->
                 <div class="relative">
                     <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
-                        <marquee class="body md:pr-[250px] md:pl-[40px] " behavior="" direction=""
-                            onmouseover="this.stop();" onmouseout="this.start();">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
                             <div class="text-[32px] font_muara flex">
                                 <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
                                         class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
@@ -467,8 +467,8 @@
                 <!-- Text marquee -->
                 <div class="relative">
                     <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
-                        <marquee class="body md:pr-[250px] md:pl-[40px] " behavior="" direction=""
-                            onmouseover="this.stop();" onmouseout="this.start();">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
                             <div class="text-[32px] font_muara flex">
                                 <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
                                         class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
@@ -593,7 +593,9 @@
         </div>
 
         <!-- Sidebar -->
-        <aside id="sidebar" class="h-screen fixed top-0 right-0 w-[291px] sidebar_bg z-50 hidden md:block ">
+        <aside id="sidebar" class="h-screen fixed top-0 right-0 w-[291px] sidebar_bg z-50 hidden md:block">
+
+
             <div class="w-full pl-[52px] ">
                 <div class="h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto">
                     <div class="">

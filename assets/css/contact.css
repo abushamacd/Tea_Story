@@ -1,0 +1,21 @@
+.font_lato {
+  font-family: Lato;
+}
+
+.custom_input_frame_2 {
+  position: relative;
+  transform: translateX(1em) perspective(100px) rotateY(3deg) skewY(0deg);
+  border-radius: 6px !important;
+  border-top-left-radius: 8px 24px !important;
+  border-bottom-right-radius: 8px 24px !important;
+}
+
+::placeholder {
+  color: #631e12 !important;
+}
+
+input,
+select,
+textarea {
+  color: #631e12 !important;
+}

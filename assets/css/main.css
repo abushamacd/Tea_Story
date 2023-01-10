@@ -109,6 +109,10 @@
   .indicator {
     top: 790px;
   }
+
+  .custom_input_frame {
+    transform: translateX(3em) perspective(100px) rotateY(9deg) skewY(0deg) !important;
+  }
 }
 
 .indicator button {
@@ -206,9 +210,10 @@
 
 .custom_input_frame {
   position: relative;
-  transform: translateX(1em) perspective(200px) rotateY(11deg) skewY(0deg);
-  background: #000;
-  border-radius: 85px;
+  transform: translateX(1em) perspective(100px) rotateY(9deg) skewY(0deg);
+  border-radius: 6px !important;
+  border-top-left-radius: 8px 24px !important;
+  border-bottom-right-radius: 8px 24px !important;
 }
 
 .custom_img_frame_2 {

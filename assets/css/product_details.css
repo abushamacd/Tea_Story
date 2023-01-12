@@ -102,9 +102,4 @@ input[type="number"]::-webkit-outer-spin-button {
 .swiper-button-next,
 .swiper-button-prev {
   position: relative !important;
-  /* left: 46% !important; */
-}
-
-.swiper-button-next {
-  /* left: 54% !important; */
 }

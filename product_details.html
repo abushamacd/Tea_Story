@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./assets/css/product_details.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <style>
         @media screen and (max-width: 455px) {
             .h3 {
@@ -73,8 +74,7 @@
 
     <div>
         <div>
-
-            <div class="relative md:top-0 top-[80px] bg-[#EEF2C4] text-primary">
+            <div class="relative md:top-0  bg-[#EEF2C4] top-[80px] text-primary">
                 <!-- Product Details -->
                 <div class="">
                     <div class="md:flex justify-center items-center body">
@@ -192,6 +192,133 @@
                     </div>
 
 
+                </div>
+
+                <!-- Text marquee -->
+                <div class="relative">
+                    <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
+                        <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                            onmouseout="this.start();">
+                            <div class="text-[32px] font_muara flex">
+                                <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                                <span class="flex ml-[18px] items-center text-primary">BLENDED IN SINGAPORE <img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                                <span class="flex ml-[18px] items-center text-primary">SHIPPING GLOBALLY<img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                                <span class="flex ml-[18px] items-center text-primary">ONLY THE GOOD STUFFS<img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+
+                                <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                                <span class="flex ml-[18px] items-center text-primary">BLENDED IN SINGAPORE <img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                                <span class="flex ml-[18px] items-center text-primary">SHIPPING GLOBALLY<img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                                <span class="flex ml-[18px] items-center text-primary">ONLY THE GOOD STUFFS<img
+                                        class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+
+                <!-- Product Carousel -->
+                <div class="bg-[#F7E1EF] pt-[120px] py-[80px] ">
+                    <div class="body md:pr-[270px] md:p-0">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div
+                                    class="swiper-slide flex md:flex-row flex-col md:text-start text-center items-center md:w-6/12 w-full md:pl-[60px] p-[24px] md:m-0">
+                                    <div class="md:w-4/12 w-full">
+                                        <img class="custom_img_frame_3 rounded-[30px] object-cover w-[200px] h-[270px] mx-auto"
+                                            src="https://mobimg.b-cdn.net/v3/fetch/83/83b001d629f121eea6797b62cdcb4c68.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="md:w-8/12 w-full md:pl-[20px] p-0 ">
+                                        <h3 class="text-[32px] font_muara ">Hot Brews </h3>
+                                        <p class="font_lato text-[18px] ">Caffeinated Teas: 1 Pyramid Tea Bag for 3-5
+                                            Minutes with 250 ml
+                                            water
+                                            Caffeinate Free Blends: 1 Pyramid Tea Bag for 5-7 Minutes with 250 ml water
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide flex md:flex-row flex-col md:text-start text-center items-center md:w-6/12 w-full md:pl-[60px] p-[24px] md:m-0">
+                                    <div class="md:w-4/12 w-full">
+                                        <img class="custom_img_frame_3 rounded-[30px] object-cover w-[200px] h-[270px] mx-auto"
+                                            src="https://mobimg.b-cdn.net/v3/fetch/83/83b001d629f121eea6797b62cdcb4c68.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="md:w-8/12 w-full md:pl-[20px] p-0 ">
+                                        <h3 class="text-[32px] font_muara ">Hot Brews </h3>
+                                        <p class="font_lato text-[18px] ">Caffeinated Teas: 1 Pyramid Tea Bag for 3-5
+                                            Minutes with 250 ml
+                                            water
+                                            Caffeinate Free Blends: 1 Pyramid Tea Bag for 5-7 Minutes with 250 ml water
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide flex md:flex-row flex-col md:text-start text-center items-center md:w-6/12 w-full md:pl-[60px] p-[24px] md:m-0">
+                                    <div class="md:w-4/12 w-full">
+                                        <img class="custom_img_frame_3 rounded-[30px] object-cover w-[200px] h-[270px] mx-auto"
+                                            src="https://mobimg.b-cdn.net/v3/fetch/83/83b001d629f121eea6797b62cdcb4c68.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="md:w-8/12 w-full md:pl-[20px] p-0 ">
+                                        <h3 class="text-[32px] font_muara ">Hot Brews </h3>
+                                        <p class="font_lato text-[18px] ">Caffeinated Teas: 1 Pyramid Tea Bag for 3-5
+                                            Minutes with 250 ml
+                                            water
+                                            Caffeinate Free Blends: 1 Pyramid Tea Bag for 5-7 Minutes with 250 ml water
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide flex md:flex-row flex-col md:text-start text-center items-center md:w-6/12 w-full md:pl-[60px] p-[24px] md:m-0">
+                                    <div class="md:w-4/12 w-full">
+                                        <img class="custom_img_frame_3 rounded-[30px] object-cover w-[200px] h-[270px] mx-auto"
+                                            src="https://mobimg.b-cdn.net/v3/fetch/83/83b001d629f121eea6797b62cdcb4c68.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="md:w-8/12 w-full md:pl-[20px] p-0 ">
+                                        <h3 class="text-[32px] font_muara ">Hot Brews </h3>
+                                        <p class="font_lato text-[18px] ">Caffeinated Teas: 1 Pyramid Tea Bag for 3-5
+                                            Minutes with 250 ml
+                                            water
+                                            Caffeinate Free Blends: 1 Pyramid Tea Bag for 5-7 Minutes with 250 ml water
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide flex md:flex-row flex-col md:text-start text-center items-center md:w-6/12 w-full md:pl-[60px] p-[24px] md:m-0">
+                                    <div class="md:w-4/12 w-full">
+                                        <img class="custom_img_frame_3 rounded-[30px] object-cover w-[200px] h-[270px] mx-auto"
+                                            src="https://mobimg.b-cdn.net/v3/fetch/83/83b001d629f121eea6797b62cdcb4c68.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="md:w-8/12 w-full md:pl-[20px] p-0 ">
+                                        <h3 class="text-[32px] font_muara ">Hot Brews </h3>
+                                        <p class="font_lato text-[18px] ">Caffeinated Teas: 1 Pyramid Tea Bag for 3-5
+                                            Minutes with 250 ml
+                                            water
+                                            Caffeinate Free Blends: 1 Pyramid Tea Bag for 5-7 Minutes with 250 ml water
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-10">
+                                <div class="swiper-button-next md:left-[54%] left-[54%] ">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div class="swiper-button-prev md:left-[46%] left-[32%]">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Text marquee -->
@@ -426,7 +553,6 @@
                         </div>
                     </footer>
                 </div>
-
             </div>
 
             <!-- Sidebar -->
@@ -587,6 +713,7 @@
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Custom JS -->
     <script src="./assets/js/main.js"></script>

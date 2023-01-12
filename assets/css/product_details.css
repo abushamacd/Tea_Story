@@ -79,3 +79,32 @@ input[type="number"]::-webkit-outer-spin-button {
 [type="radio"] {
   border: #fa7513;
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: none !important;
+  font-size: 20px !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  content: none !important;
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+  color: white !important;
+  background: #fa7513 !important;
+  padding: 10px !important;
+  border-radius: 50% !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+  /* left: 46% !important; */
+}
+
+.swiper-button-next {
+  /* left: 54% !important; */
+}

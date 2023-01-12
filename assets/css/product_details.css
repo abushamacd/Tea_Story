@@ -1,0 +1,81 @@
+.product_details_img_frame {
+  position: relative;
+  transform: translateX(0em) perspective(600px) rotateY(4deg) skewY(0deg);
+  background: #000;
+  border-radius: 85px;
+}
+
+.value-button {
+  display: inline-block;
+  margin: 0px;
+  width: 32px;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fa7513;
+  font-size: 24px;
+  background-color: #fff;
+}
+
+.value-button:hover {
+  cursor: pointer;
+  background-color: #fa7513;
+  color: #fff;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  font-family: Muara;
+  font-size: 24px;
+  background-color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .info_bg {
+  background-image: url("./../images/note_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+} */
+
+.info_bg {
+  position: relative;
+  transform: translateX(0em) perspective(900px) rotateY(4deg) skewY(0deg);
+  background: #fff;
+  border-radius: 35px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:focus {
+  background-color: #fa7513 !important;
+  color: #fa7513;
+  border-color: #fa7513;
+  background-image: none !important;
+  outline-color: #fa7513;
+}
+
+[type="radio"] {
+  border: #fa7513;
+}

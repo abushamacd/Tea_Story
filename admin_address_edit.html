@@ -116,48 +116,57 @@
                                 class="bg-[#FFF5F5] md:rounded-[150px] rounded-[30px] md:p-10 md:pb-20 p-4 md:mb-0 mb-32">
                                 <div>
                                     <div class="mb-[30px] ">
-                                        <h2 class="text-[32px] font_muara">My address</h2>
+                                        <h2 class="text-[48px] font_muara">My address</h2>
                                     </div>
-                                    <div class="mb-[40px] ">
-                                        <h3 class="title-hr">
-                                            <hr /><span class="text-[12px] font_lato">Billing Address</span>
-                                            <hr />
-                                        </h3>
-                                        <button
-                                            class="uppercase bg-[#FF6B00] px-[24px] rounded-[35px] text-white font-normal mt-[33px]">Default</button>
-                                        <h2 class="text-[24px] font_muara md:w-4/12 mx-auto ">1901 Thornridge Cir.
-                                            Shiloh,
-                                            Hawaii
-                                            81063
-                                        </h2>
-                                        <div class="flex md:flex-row flex-col justify-center gap-4">
-                                            <button
-                                                class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[8px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Edit</button>
-                                            <button
-                                                class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[8px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Delete</button>
-                                            <button
-                                                class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[8px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Add</button>
-                                        </div>
-                                    </div>
-                                    <div class="mb-[40px] ">
-                                        <h3 class="title-hr">
-                                            <hr /><span class="text-[12px] font_lato">Delivery Address</span>
-                                            <hr />
-                                        </h3>
-                                        <button
-                                            class="uppercase bg-[#FF6B00] px-[24px] rounded-[35px] text-white font-normal mt-[33px]">Default</button>
-                                        <h2 class="text-[24px] font_muara md:w-4/12 mx-auto ">1901 Thornridge Cir.
-                                            Shiloh,
-                                            Hawaii
-                                            81063
-                                        </h2>
-                                        <div class="flex md:flex-row flex-col justify-center gap-4"><button
-                                                class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[8px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Edit</button><button
-                                                class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[8px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Delete</button><button
-                                                class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[8px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Add</button>
-                                        </div>
-                                    </div>
+                                    <h3 class="text-[18px] fon  t_lato">
+                                        Billing Address
+                                    </h3>
+                                    <form class="md:w-[50%] w-[80%] mx-auto" action="">
+                                        <input type="text" id="footer-field" name="footer-field" value=""
+                                            class="track_order_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-6"
+                                            placeholder="First Name">
+                                        <input type="text" id="footer-field" name="footer-field" value=""
+                                            class="track_order_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-6"
+                                            placeholder="Last Name">
+                                        <input type="text" id="footer-field" name="footer-field" value=""
+                                            class="track_order_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-6"
+                                            placeholder="Company name">
 
+                                        <input type="text" id="footer-field" name="footer-field" value=""
+                                            class="track_order_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-6"
+                                            placeholder="Address">
+
+                                        <div class="flex justify-between gap-2">
+                                            <select
+                                                class="track_order_input_frame w-full bg-white rounded border ml-[-20px] border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                                name="business type" id="b_type">
+                                                <option class="text-primary" value="wholesale">Country</option>
+                                                <option class="text-primary" value="retailer">USA</option>
+                                                <option class="text-primary" value="retailer">UAE</option>
+                                            </select>
+                                            <select
+                                                class="track_order_input_frame w-full bg-white rounded border mr-[17px] border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                                name="business type" id="b_type">
+                                                <option class="text-primary" value="wholesale">City</option>
+                                                <option class="text-primary" value="retailer">New York</option>
+                                                <option class="text-primary" value="retailer">Melborn</option>
+                                            </select>
+                                        </div>
+
+                                        <input type="text" id="footer-field" name="footer-field" value=""
+                                            class="track_order_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-6"
+                                            placeholder="Postcode">
+
+                                        <input type="text" id="footer-field" name="footer-field" value=""
+                                            class="track_order_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-6"
+                                            placeholder="Phone">
+                                        <input type="checkbox" name="set_address" value="default" checked>
+                                        <label for="set_address"> Set as default</label><br>
+                                        <button
+                                            class="uppercase hover:bg-[#FF6B00] hover:text-white border text-[14px] text-[#ff6b00] bg-transparent border-[#ff6b00] py-[6px] px-[30px] rounded-[35px] text-white font-normal mt-[10px]">Cancel</button>
+                                        <button
+                                            class="uppercase bg-[#FF6B00] py-[6px] px-[30px] rounded-[35px] text-white font-normal mt-[33px]">Save</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

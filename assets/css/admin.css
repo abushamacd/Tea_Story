@@ -1,0 +1,8 @@
+.admin_bg {
+  background-image: url("./../images/admin_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 869px;
+  height: 770px;
+}

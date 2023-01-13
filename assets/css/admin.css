@@ -40,7 +40,7 @@
 
 .track_order_input_frame {
   position: relative;
-  transform: translateX(1em) perspective(100px) rotateY(9deg) skewY(0deg);
+  transform: translateX(1em) perspective(100px) rotateY(5deg) skewY(0deg);
   border-radius: 6px !important;
   border-top-left-radius: 8px 24px !important;
   border-bottom-right-radius: 8px 24px !important;
@@ -50,4 +50,8 @@
   .track_order_input_frame {
     transform: translateX(1em) perspective(100px) rotateY(9deg) skewY(0deg) !important;
   }
+}
+
+input {
+  color: #631e12 !important;
 }

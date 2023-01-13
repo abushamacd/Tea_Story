@@ -6,6 +6,14 @@
   width: 869px;
   height: 770px;
 }
+.voucher_bg {
+  background-image: url("./../images/voucher_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 128px;
+  width: 290px;
+  margin: 0 auto;
+}
 
 .profile_menu .active,
 .profile_menu li:hover {

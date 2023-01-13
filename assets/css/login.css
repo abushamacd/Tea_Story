@@ -1,0 +1,17 @@
+.login_popup_bg {
+  background-image: url("./../images/login_popup_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 782px;
+  height: 585px;
+}
+
+@media screen and (max-width: 480px) {
+  .login_popup_bg {
+    background-color: #f7e1ef;
+    width: 100%;
+    height: 1030px;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tea - Story</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/ebrima/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/lato/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/muara/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8cffe8c664.js" crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#631E12',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @media screen and (max-width: 455px) {
+            .h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Mobile Menu -->
+    <div class="mobile_menu_bg fixed h-[80px]  flex justify-between items-center z-50 block md:hidden">
+        <div class="logo z-40 m-[22px]">
+            <img src="./assets//images/logo.png" alt="">
+        </div>
+        <div class="icons flex gap-[24px] mr-[24px] z-40 text-primary">
+            <div class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center">
+                <i class="fa-regular fa-circle-user text-[24px] "></i>
+            </div>
+            <div class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center relative">
+                <span
+                    class="absolute bg-[#00D746] rounded-full w-[20px] h-[20px] text-center text-white leading-tight top-[-7px] right-[-5px] ">0</span>
+                <i class="fa-solid fa-cart-shopping">
+                </i>
+            </div>
+            <div onclick="openSidebar()"
+                class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <!-- Top Info -->
+            <div class="flex md:flex-row flex-col relative md:top-0 top-[80px] mb-[70px] md:mb-0">
+                <div class="md:4/12 w-full bg-[#F37137] text-white text-center">
+                    <div class="ml-auto  md:px-[65px] p-[50px]">
+                        <h2 class="text-[48px] font_muara">Say Hello</h2>
+                        <p class="text-[18px] font_lato">We’d love to hear from you. Questions?
+                            Comments? Email
+                            us.</p>
+                        <p class="text-[24px] font_muara ">HELLO@THETEASTORY.CO</p>
+                    </div>
+                </div>
+                <div class="md:4/12 w-full bg-[#B6A3FA] text-white text-center">
+                    <div class="mx-auto  md:px-[65px] p-[50px]">
+                        <h2 class="text-[48px] font_muara">Order</h2>
+                        <p class="text-[18px] font_lato">Order related queries? Email us.</p>
+                        <p class="text-[24px] font_muara ">ORDERS@THETEASTORY.CO</p>
+                    </div>
+                </div>
+                <div class="md:4/12 w-full bg-[#FA9E9E] text-white text-center mr-0 md:mr-[230px] ">
+                    <div class=" md:px-[65px] p-[50px]">
+                        <h2 class="text-[48px] font_muara">Wholesale</h2>
+                        <p class="text-[18px] font_lato">Bulk orders or events? Email us.</p>
+                        <p class="text-[24px] font_muara ">INFO@THETEASTORY.CO</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text marquee -->
+            <div class="relative">
+                <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
+                    <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                        onmouseout="this.start();">
+                        <div class="text-[32px] font_muara flex">
+                            <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">BLENDED IN SINGAPORE <img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">SHIPPING GLOBALLY<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">ONLY THE GOOD STUFFS<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+
+                            <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">BLENDED IN SINGAPORE <img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">SHIPPING GLOBALLY<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">ONLY THE GOOD STUFFS<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+
+            <!-- Contact area -->
+            <div class="flex md:flex-row flex-col pt-[80px] ">
+                <div class="md:w-6/12 w-full text-primary bg-[#CCE6F3]">
+                    <div class="mx-auto w-[366px] md:p-0 md:py-[65px] p-[50px]">
+                        <h2 class="md:text-[48px] text-[36px] font_muara leading-10 mb-2">Let's chit chat over a cup of
+                            tea?</h2>
+                        <div class="mb-4">
+                            <p class="text-[24px] font_muara ">BREWING LOVE FROM</p>
+                            <div class="mb-2">
+                                <p class="text-[18px] font_lato">
+                                <p>65 Ubi Road 1,</p>
+                                <p>#02-53
+                                    Oxley Bizhub 1</p>
+                                <p>Singapore 408729</p>
+                                </p>
+                            </div>
+                            <p class="text-[18px] font_lato">Find us on Google map</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-[24px] font_muara ">LET'S TALK TEAS</p>
+                            <div class="mb-2">
+                                <p class="text-[18px] font_lato">
+                                <p>+65 6909 5933 (Call)</p>
+                                <p>+65 9488 4513 (Whatsapp)</p>
+                            </div>
+                        </div>
+                        <p>We're always brewing magic, and would be delighted to treat you a cup! Just message us via
+                            Whatsapp to book your slots! </p>
+                    </div>
+                </div>
+                <div class="md:w-6/12 w-full text-primary bg-[#EEF2C4] mr-0 md:mr-[230px]">
+                    <div class=" md:px-[108px] py-[65px] p-[50px] text-center">
+                        <h2 class="text-[32px] font_muara">Talk Dir-TEA to us!</h2>
+                        <form action="">
+                            <select
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                name="business type" id="b_type">
+                                <option class="text-primary" value="wholesale">Wholesale</option>
+                                <option class="text-primary" value="retailer">Retailer</option>
+                            </select>
+
+                            <input type="text" id="footer-field" name="footer-field"
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                placeholder="Name">
+
+                            <input type="text" id="footer-field" name="footer-field"
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                placeholder="Mobile">
+
+                            <input type="text" id="footer-field" name="footer-field"
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                placeholder="Company">
+
+                            <input type="email" id="footer-field" name="footer-field"
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                placeholder="Email">
+
+                            <select
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4 text-primary"
+                                name="business type" id="b_type">
+                                <option class="text-primary" value="">Country</option>
+                                <option class="text-primary" value="retailer">USA</option>
+                                <option class="text-primary" value="retailer">UAE</option>
+                                <option class="text-primary" value="retailer">UK</option>
+                            </select>
+
+                            <textarea
+                                class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4 text-primary"
+                                name="message" id="message" cols="30" rows="5"></textarea>
+                            <!-- Modal pop-up button is here -->
+                            <button type="button" data-modal-target="default" data-modal-toggle="defaultModal"
+                                class="uppercase bg-[#F57547] py-[16px] px-[24px] rounded-[35px] text-primary font-bold mt-[33px] text-white">Submit
+                                now && show pop-up </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pop-Up -->
+            <!-- Main modal -->
+            <div id="defaultModal" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full py-[100px] overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:ml-[-100px] ">
+                <div class="relative w-full h-full max-w-3xl ">
+                    <!-- Modal content -->
+                    <div
+                        class="relative login_popup_bg md:h-[585px] h-[500px] flex justify-center md:items-center text-primary text-center md:p-0 p-6 ">
+                        <div>
+                            <!-- Close Button -->
+                            <div class="absolute right-0 top-0 flex items-start justify-end">
+                                <button type="button" class=" w-[50px] h-[50px] rounded-full bg-[#FA7513] text-white"
+                                    data-modal-hide="defaultModal">
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Content -->
+                            <div class=" md:pr-[108px] md:pl-[150px] md:py-[65px]  text-center">
+                                <h2 class="text-[48px] font_muara">I am a
+                                    Tea Connoisseur!</h2>
+                                <form action="">
+
+                                    <input type="email" id="footer-field" name="footer-field"
+                                        class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                        placeholder="Email">
+
+                                    <input type="password" id="footer-field" name="footer-field"
+                                        class="custom_input_frame_2 w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mb-4"
+                                        placeholder="Password">
+
+                                    <p class="text-[18px] mb-[15px] text-start ">Forgot your password?</p>
+                                    <!-- Modal pop-up button is here -->
+                                    <button type="button"
+                                        class="uppercase bg-[#F57547] py-[16px] px-[24px] rounded-[35px] text-primary font-bold mt-[33px] text-white">Lets
+                                        get started!</button>
+                                </form>
+                                <p class="text-[18px] mt-[15px] ">Don’t have an account?<a href=""><span
+                                            class="text-[#D13990] ">Create now</span></a> </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Text marquee -->
+            <div class="relative">
+                <div class="marquee_bg h-[116px] absolute z-30 top-[-10px] flex items-center">
+                    <marquee scrolldelay="60" class="body" behavior="" direction="" onmouseover="this.stop();"
+                        onmouseout="this.start();">
+                        <div class="text-[32px] font_muara flex">
+                            <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">BLENDED IN SINGAPORE <img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">SHIPPING GLOBALLY<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">ONLY THE GOOD STUFFS<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+
+                            <span class="flex ml-[18px] items-center text-primary">NO NASTIES<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">BLENDED IN SINGAPORE <img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">SHIPPING GLOBALLY<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+                            <span class="flex ml-[18px] items-center text-primary">ONLY THE GOOD STUFFS<img
+                                    class="mx-[9px] block h-[12px] " src="./assets/images/star.png" alt=""> </span>
+
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <div class="bg-[#FFD4D6] pt-[200px] pb-[80px] ">
+                <footer class="text-primary font_ebrima body md:pr-[250px] md:pl-[50px] ">
+                    <div class="container px-5 mx-auto">
+                        <div class="flex flex-wrap md:text-left text-center order-first">
+                            <div class="md:w-1/4 w-2/4 text-start">
+                                <nav class="list-none mb-10">
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Our Story</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Shop Teas</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Shop Superfoods</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Wholesale</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Affiliate Program</a>
+                                    </li>
+                                </nav>
+                            </div>
+                            <div class="md:w-1/4 w-2/4 text-start">
+                                <nav class="list-none mb-10">
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Our Story</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Shop Teas</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Shop Superfoods</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Wholesale</a>
+                                    </li>
+                                    <li class="mb-[10px] text-[18px]">
+                                        <a class="text-primary hover:text-gray-800">Affiliate Program</a>
+                                    </li>
+                                </nav>
+                            </div>
+                            <div class="md:w-2/4 w-4/4">
+                                <h3 class="text-primary tracking-wide font_muara text-[32px] md:pr-[30px]">
+                                    Your source for hot sips, cool tricks & all things tea!</h3>
+                                <div class="flex flex-wrap justify-center items-center md:justify-start my-[15px]">
+                                    <div class="relative md:w-50 w-full sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                                        <input type="text" id="footer-field" name="footer-field"
+                                            class=" custom_input_frame w-full bg-white rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                    </div>
+                                    <button
+                                        class="uppercase bg-[#FF693E] py-[12px] px-[24px] rounded-[35px] text-white font-bold md:w-[165px] w-full md:mt-0 mt-4">Subscribe
+                                        now</button>
+                                </div>
+                                <div class="social_media">
+                                    <ul class="flex md:justify-start justify-center ">
+                                        <li class="social_item mr-[24px] ">
+                                            <a class="text-[32px] " href="#">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social_item mr-[24px] ">
+                                            <a class="text-[32px] " href="#">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social_item mr-[24px] ">
+                                            <a class="text-[32px] " href="#">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social_item mr-[24px] ">
+                                            <a class="text-[32px] " href="#">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social_item mr-[24px] ">
+                                            <a class="text-[32px] " href="#">
+                                                <i class="fa-brands fa-tiktok"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p
+                                    class="text-primary text-sm font-semibold mt-2 md:text-left text-center uppercase mt-[20px] ">
+                                    ©2022 by
+                                    Tiger Foods
+                                    Pte Ltd
+                                    All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="h-screen fixed top-0 right-0 w-[291px] sidebar_bg z-50 hidden md:block">
+            <div class="w-full pl-[52px] ">
+                <div class="h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto">
+                    <div class="">
+                        <div onclick="closeSidebar()" class="close absolute left-[-10px] block md:hidden">
+                            <div class="h-[40px] w-[40px] bg-[#FF6B00] rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-xmark text-[24px] text-white "></i>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logo my-[40px] ">
+                            <a href="#">
+                                <img src="./assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Account  -->
+                        <div class="user flex w-[104px] justify-between text-primary">
+                            <div class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center">
+                                <i class="fa-regular fa-circle-user text-[24px] "></i>
+                            </div>
+                            <div
+                                class="h-[40px] w-[40px] bg-white rounded-full flex items-center justify-center relative">
+                                <span
+                                    class="absolute bg-[#00D746] rounded-full w-[20px] h-[20px] text-center text-white leading-tight top-[-7px] right-[-5px] ">0</span>
+                                <i class="fa-solid fa-cart-shopping">
+                                </i>
+                            </div>
+                        </div>
+                        <!-- Sidebar -->
+                        <div class="manu my-[34px]" id="sidenavSecExample">
+                            <ul class="relative pr-2">
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="./index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="./store.html">
+                                        <span>Story</span>
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="./teas.html">
+                                        <span>Teas</span>
+                                    </a>
+                                </li>
+                                <li class="relative" id="sidenavSecEx2">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out cursor-pointer"
+                                        data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSidenavSecEx2" aria-expanded="false"
+                                        aria-controls="collapseSidenavSecEx2">
+
+                                        <span>Superfoods</span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx2"
+                                        aria-labelledby="sidenavSecEx2" data-bs-parent="#sidenavSecExample">
+                                        <li class="relative">
+                                            <a href="#!"
+                                                class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                data-mdb-ripple="true" data-mdb-ripple-color="primary">Superfoods
+                                                1</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#!"
+                                                class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                data-mdb-ripple="true" data-mdb-ripple-color="primary">Superfoods
+                                                2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative" id="sidenavSecEx3">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out cursor-pointer"
+                                        data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSidenavSecEx3" aria-expanded="false"
+                                        aria-controls="collapseSidenavSecEx3">
+
+                                        <span>Shop</span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3"
+                                        aria-labelledby="sidenavSecEx3" data-bs-parent="#sidenavSecExample">
+                                        <li class="relative">
+                                            <a href="#!"
+                                                class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                data-mdb-ripple="true" data-mdb-ripple-color="primary">Shop
+                                                1</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#!"
+                                                class="flex items-center text-[24px] uppercase py-1 font_muara pl-6 overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded  hover:underline transition duration-300 ease-in-out"
+                                                data-mdb-ripple="true" data-mdb-ripple-color="primary">Shop
+                                                2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="#">
+                                        <span>promotions</span>
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="#">
+                                        <span>Bes-tea program</span>
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="#">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="#">
+                                        <span>wholesale</span>
+                                    </a>
+                                </li>
+                                <li class="relative">
+                                    <a class="flex items-center text-[24px] uppercase py-1 font_muara overflow-hidden text-primary text-ellipsis whitespace-nowrap rounded hover:underline transition duration-300 ease-in-out"
+                                        href="#">
+                                        <span>contact us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+</body>
+
+</html>

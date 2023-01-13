@@ -16,5 +16,10 @@
   display: inline-block;
   width: 30%;
   margin: 5px 10px;
-  border-top: 1px solid #ff6b00;
+  border-top: 1px solid #f7e1ef;
+}
+.hr {
+  /* width: 80%; */
+  border-top: 1px solid #f7e1ef;
+  /* margin: 0 auto; */
 }

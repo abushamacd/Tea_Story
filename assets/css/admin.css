@@ -6,3 +6,15 @@
   width: 869px;
   height: 770px;
 }
+
+.profile_menu .active,
+.profile_menu li:hover {
+  color: #ff6b00;
+}
+
+.title-hr hr {
+  display: inline-block;
+  width: 30%;
+  margin: 5px 10px;
+  border-top: 1px solid #ff6b00;
+}

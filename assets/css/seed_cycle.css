@@ -1,0 +1,3 @@
+.parse_list li::marker {
+  color: #d82e4a !important;
+}

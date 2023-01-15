@@ -47,8 +47,7 @@
 </head>
 
 
-<body>
-
+<body onload="openModal()">
     <!-- Mobile Menu -->
     <div class="mobile_menu_bg fixed h-[80px]  flex justify-between items-center z-50 block md:hidden">
         <div class="logo z-40 m-[22px]">
@@ -218,7 +217,8 @@
 
                         <div>
                             <div class=" absolute right-0 top-0 flex items-start justify-end ">
-                                <button type="button" class=" w-[50px] h-[50px] rounded-full bg-[#FA7513] text-white"
+                                <button onclick="closeModal()" type="button"
+                                    class=" w-[50px] h-[50px] rounded-full bg-[#FA7513] text-white"
                                     data-modal-hide="defaultModal">
                                     <i class="fa-solid fa-xmark"></i>
                                     <span class="sr-only">Close modal</span>
@@ -568,10 +568,13 @@
 
     <!-- Custom JS -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/contact.js"></script>
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <!-- Flowbite -->
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <div id="modal_overlay" modal-backdrop="" class="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40 ">
+    </div>
 </body>
 
 </html>

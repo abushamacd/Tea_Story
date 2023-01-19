@@ -1,0 +1,11 @@
+add in main css 
+//
+body,
+body i {
+  color: #631e12;
+}
+
+
+Comment this class form css all file (not from any html)
+custom_input_frame
+custom_input_frame_2

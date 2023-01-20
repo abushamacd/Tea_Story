@@ -1,0 +1,14 @@
+<svg width="270" height="270" viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_1_226" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="2" width="270" height="268">
+<path d="M0 83.3307C0 44.1882 0 24.617 12.2983 12.8103C24.5965 1.00358 44.1515 1.80146 83.2614 3.39721L223.957 9.13782C245.736 10.0265 256.626 10.4708 263.313 17.4361C270 24.4015 270 35.3003 270 57.0979V206C270 236.17 270 251.255 260.627 260.627C251.255 270 236.17 270 206 270H48C25.3726 270 14.0589 270 7.02944 262.971C0 255.941 0 244.627 0 222L0 83.3307Z" fill="#EFE9E8"/>
+</mask>
+<g mask="url(#mask0_1_226)">
+<rect width="270" height="270" fill="url(#pattern0)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_1_226" transform="translate(-0.249908) scale(0.000366166)"/>
+</pattern>
+<image id="image0_1_226" width="4096" height="2731" xlink:href="https://www.freecodecamp.org/news/content/images/size/w2000/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg"/>
+</defs>
+</svg>

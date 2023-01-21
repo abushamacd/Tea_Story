@@ -116,7 +116,7 @@
 }
 
 .indicator button {
-  background-color: #631e12 !important;
+  background-color: #fff !important;
 }
 
 .banner_solid_mobile_1::after {
@@ -352,4 +352,27 @@
 body,
 body i {
   color: #631e12;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 48px !important;
+}
+
+p,
+span,
+li {
+  line-height: 32px;
+}
+
+.footer_line_height {
+  line-height: 32px !important;
+}
+
+.list_line_height {
+  line-height: 29px !important;
 }

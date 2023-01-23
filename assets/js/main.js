@@ -69,12 +69,18 @@ const screen = () => {
 
 const openSidebar = () => {
   var element = document.getElementById("sidebar");
+  var overlay = document.getElementById("sidebar_overlay");
   element.classList.remove("hidden");
   element.classList.add("block");
+  overlay.classList.remove("hidden");
+  overlay.classList.add("block");
 };
 
 const closeSidebar = () => {
   var element = document.getElementById("sidebar");
+  var overlay = document.getElementById("sidebar_overlay");
   element.classList.remove("block");
   element.classList.add("hidden");
+  overlay.classList.remove("block");
+  overlay.classList.add("hidden");
 };

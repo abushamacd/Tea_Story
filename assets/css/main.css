@@ -13,6 +13,7 @@
   background-image: url("./../images/sidebar/sidebar_bg.svg");
   background-repeat-y: repeat;
   background-repeat-x: no-repeat;
+  background-size: cover;
 }
 .font_muara {
   font-family: Muara;
@@ -375,4 +376,10 @@ li {
 
 .list_line_height {
   line-height: 29px !important;
+}
+
+.slide:hover .product_gallary_bg img {
+  opacity: 0.7;
+  transition: all;
+  transition-duration: 0.3s;
 }

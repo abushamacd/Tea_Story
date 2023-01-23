@@ -397,3 +397,8 @@ li {
     --marquee_margin: 0px;
   }
 }
+
+input,
+select {
+  margin-bottom: 8px !important;
+}

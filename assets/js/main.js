@@ -85,6 +85,7 @@ const closeSidebar = () => {
   overlay.classList.add("hidden");
 };
 
+// Dropdown tigger
 const dropdownTigger = () => {
   var upAngle = document.getElementById("upAngle");
   var downAngle = document.getElementById("downAngle");

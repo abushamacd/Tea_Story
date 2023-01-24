@@ -84,3 +84,28 @@ const closeSidebar = () => {
   overlay.classList.remove("block");
   overlay.classList.add("hidden");
 };
+
+const dropdownTigger = () => {
+  var upAngle = document.getElementById("upAngle");
+  var downAngle = document.getElementById("downAngle");
+
+  if (upAngle.classList.contains("block")) {
+    upAngle.classList.remove("block");
+    upAngle.classList.add("hidden");
+    downAngle.classList.remove("hidden");
+    downAngle.classList.add("block");
+  } else if (downAngle.classList.contains("block")) {
+    upAngle.classList.remove("hidden");
+    upAngle.classList.add("block");
+    downAngle.classList.remove("block");
+    downAngle.classList.add("hidden");
+  }
+};
+
+// Active link
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active");
+  }
+});

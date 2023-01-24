@@ -443,3 +443,23 @@ span {
     left: -100%;
   }
 }
+
+/* Active Menu */
+.main_menu .active,
+.main_menu li a:hover {
+  background: #f57547;
+  color: #fff;
+  border-radius: 50px;
+  padding: 6px 15px 6px 17px;
+  width: 108%;
+  margin-left: -17px;
+}
+
+.main_menu > li:hover i {
+  color: #fff !important;
+}
+
+.main_menu li a {
+  padding: 6px 15px 6px 0px;
+  margin-bottom: 10px;
+}

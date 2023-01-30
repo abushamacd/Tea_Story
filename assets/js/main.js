@@ -110,3 +110,8 @@ const navLinks = document.querySelectorAll("nav a").forEach((link) => {
     link.classList.add("active");
   }
 });
+
+const controlForm = () => {
+  document.getElementById("openLogin").click();
+  document.getElementById("closeCreateAccount").click();
+};

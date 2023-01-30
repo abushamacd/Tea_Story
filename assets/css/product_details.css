@@ -60,11 +60,24 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
 } */
 
-.info_bg {
+/* .info_bg {
   position: relative;
   transform: translateX(0em) perspective(900px) rotateY(4deg) skewY(0deg);
   background: #fff;
   border-radius: 35px;
+} */
+
+.info_bg {
+  background-image: url("./../images/product_details.svg");
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 370px;
+}
+
+@media screen and (max-width: 480px) {
+  .info_bg {
+    height: 212px;
+  }
 }
 
 [type="radio"]:checked,

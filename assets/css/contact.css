@@ -21,12 +21,12 @@ textarea {
 }
 
 .contact_popup_bg {
-  background-image: url("./../images/contact_popup_bg.svg");
+  background-image: url("./../images/create_account.svg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 786px;
-  height: 864px;
+  height: 812px;
 }
 
 @media screen and (max-width: 480px) {

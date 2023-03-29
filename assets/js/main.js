@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".brand_logos").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500,
     arrows: false,
     dots: false,
@@ -52,7 +52,7 @@ $(document).ready(function () {
       {
         breakpoint: 450,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
         },
       },
     ],

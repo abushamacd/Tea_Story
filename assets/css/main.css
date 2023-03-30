@@ -592,12 +592,14 @@ button {
   height: 20px;
   content: "•";
   text-align: center;
+  opacity: 1;
   color: #e49acb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .text_slider .slick-dots li.slick-active button:before {
+  opacity: 1;
   color: #d82e4a;
 }
 /* text slider css end */

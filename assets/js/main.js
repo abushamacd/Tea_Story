@@ -57,6 +57,18 @@ $(document).ready(function () {
       },
     ],
   });
+
+  // text slider js start
+  $(".text_slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: true,
+    pauseOnHover: false,
+  });
+  // text slider js end
 });
 
 const screen = () => {

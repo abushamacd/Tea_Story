@@ -558,3 +558,46 @@ button {
 .line_height_100 {
   line-height: 100% !important;
 }
+
+/* text slider css start */
+.text_slider ul.slick-dots {
+  position: unset;
+  text-align: start;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .text_slider ul.slick-dots {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.text_slider .slick-slide {
+  margin: 0px;
+}
+
+.text_slider .slick-dots li {
+  margin: 0px;
+}
+
+.text_slider .slick-dots li button:before {
+  font-family: "slick";
+  font-size: 35px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  color: #e49acb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text_slider .slick-dots li.slick-active button:before {
+  color: #d82e4a;
+}
+/* text slider css end */

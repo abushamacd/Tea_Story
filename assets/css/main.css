@@ -603,3 +603,13 @@ button {
   color: #d82e4a;
 }
 /* text slider css end */
+
+.content_body {
+  margin-right: 220px;
+}
+
+@media screen and (max-width: 480px) {
+  .content_body {
+    margin-right: unset;
+  }
+}
